@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    hikari:
+      maximum-pool-size: 3
+      minimum-idle: 1
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+server:
+  port: ${PORT:8080}
+  tomcat:
+    accesslog:
+      enabled: true
+      directory: /dev
+      prefix: stdout
+      suffix: ""
+      file-date-format: ""
+      rotate: false
+      pattern: '%m %U %s %D'

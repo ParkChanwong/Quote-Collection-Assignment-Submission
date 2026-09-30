@@ -1,0 +1,30 @@
+### 모든 국가 조회
+GET http://localhost:8080/country
+Accept: application/json
+
+### 국가명으로 국가 조회
+GET http://localhost:8080/country?keyword=대한
+Accept: application/json
+
+### 단일 국가 조회
+GET http://localhost:8080/country/1
+Accept: application/json
+
+### 국가 등록
+POST http://localhost:8080/country
+Content-Type: application/json
+
+{
+    "name": "러시아"
+}
+
+### 국가 수정
+PUT http://localhost:8080/country/11
+Content-Type: application/json
+
+{
+  "name": "대만"
+}
+
+### 국가 삭제
+DELETE http://localhost:8080/country/11

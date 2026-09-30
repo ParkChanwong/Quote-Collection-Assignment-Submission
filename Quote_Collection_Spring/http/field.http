@@ -1,0 +1,30 @@
+### 전체 분야 조회
+GET http://localhost:8080/field
+Accept: application/json
+
+### 분야명으로 분야 조회
+GET http://localhost:8080/field/name?keyword=사회
+Accept: application/json
+
+### 분야 ID 단일 조회
+GET http://localhost:8080/field/1
+Accept: application/json
+
+### 분야 등록
+POST http://localhost:8080/field
+Content-Type: application/json
+
+{
+  "name": "사랑"
+}
+
+### 분야 수정
+PUT http://localhost:8080/field/11
+Content-Type: application/json
+
+{
+  "name": "운동"
+}
+
+### 분야 삭제
+DELETE http://localhost:8080/field/11

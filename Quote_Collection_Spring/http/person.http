@@ -1,0 +1,48 @@
+### 전체 인물 조회
+GET http://localhost:8080/person
+Accept: application/json
+
+### 국가명으로 인물 조회
+GET http://localhost:8080/person/country?keyword=대한
+Accept: application/json
+
+### 시대명으로 인물 조회
+GET http://localhost:8080/person/period?keyword=ad
+Accept: application/json
+
+### 분야명으로 인물 조회
+GET http://localhost:8080/person/field?keyword=사회
+Accept: application/json
+
+### 인물명으로 인물 조회
+GET http://localhost:8080/person/name?keyword=공자
+Accept: application/json
+
+### 인물 ID 단일 조회
+GET http://localhost:8080/person/1
+Accept: application/json
+
+### 인물 등록
+POST http://localhost:8080/person
+Content-Type: application/json
+
+{
+  "countryId": 1,
+  "periodId": 1,
+  "fieldId": 1,
+  "name": "test"
+}
+
+### 인물 수정
+PUT http://localhost:8080/person/11
+Content-Type: application/json
+
+{
+  "countryId": 2,
+  "periodId": 1,
+  "fieldId": 1,
+  "name": "test"
+}
+
+### 인물 삭제
+DELETE http://localhost:8080/person/11

@@ -1,0 +1,30 @@
+### 전체 주제 조회
+GET http://localhost:8080/theme
+Accept: application/json
+
+### 주제명으로 주제 조회
+GET http://localhost:8080/theme/name?keyword=사랑
+Accept: application/json
+
+### 주제 ID 단일 조회
+GET http://localhost:8080/theme/1
+Accept: application/json
+
+### 주제 등록
+POST http://localhost:8080/theme
+Content-Type: application/json
+
+{
+  "name": "인간관계"
+}
+
+### 주제 수정
+PUT http://localhost:8080/theme/11
+Content-Type: application/json
+
+{
+  "name": "학업"
+}
+
+### 주제 삭제
+DELETE http://localhost:8080/theme/12

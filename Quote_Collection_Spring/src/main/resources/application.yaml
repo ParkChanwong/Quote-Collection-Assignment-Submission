@@ -1,0 +1,48 @@
+spring:
+  application:
+    name: Quote_Collection_Spring
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/quotedb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: quotecollection
+    password: quotecollection
+
+  jpa:
+    generate-ddl: false          # 엔티티 바탕으로 테이블 자동 생성, 수정 등 하는 기능 끄기
+    database: mysql              # 사용 데이터 베이스 mysql
+    properties:
+      hibernate:
+        format_sql: true         # sql문을 들여쓰기 줄바꿈 등을하여 볼 수 있게
+        highlight_sql: true      # sql문에 색상을 넣어 표시
+        use_sql_comments: true   # 생성한 SQL에 어떤 작업에서 나온 SQL인지 파악하는 데 도움이 되는 주석 추가
+
+  jackson:
+    deserialization:
+      fail-on-null-for-primitives: false
+
+  data:
+    web:
+      pageable:
+        one-indexed-parameters: true
+
+server:
+  port: 8080
+
+app:
+  cors:
+    # 여러 주소는 쉼표로 구분 (예: https://admin.example.com,http://localhost:5173)
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:5173}
+
+jwt:
+  secret: gsT3Z7JpDfV3VP5R0KnQnUE9qgc2LDugqHLQbgLerP4=
+  issuer: quote-collection
+  access-token-expiration: 24h
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    display-request-duration: true
+    # GET → POST → PUT → DELETE 정렬은 SwaggerConfig에서 설정

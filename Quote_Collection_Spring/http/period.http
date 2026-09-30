@@ -1,0 +1,30 @@
+### 전체 시대 조회
+GET http://localhost:8080/period
+Accept: application/json
+
+### 시대명으로 시대 조회
+GET http://localhost:8080/period/name?keyword=17
+Accept: application/json
+
+### 시대 ID 단일 조회
+GET http://localhost:8080/period/1
+Accept: application/json
+
+### 시대 등록
+POST http://localhost:8080/period
+Content-Type: application/json
+
+{
+  "name": "AC 17세기"
+}
+
+### 시대 수정
+PUT http://localhost:8080/period/11
+Content-Type: application/json
+
+{
+  "name": "AD 21세기"
+}
+
+### 시대 삭제
+DELETE http://localhost:8080/period/12
