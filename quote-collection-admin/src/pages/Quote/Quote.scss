@@ -1,13 +1,13 @@
 .quote-list { margin-top: 36px; .data-table { min-width: 760px; } }
 @media (max-width: 700px) { .quote-list { margin-top: 28px; } }
-.quote-table-number { color: #8a9382; font-variant-numeric: tabular-nums; }
-.quote-table-content { overflow-wrap: anywhere; font-size: 14px; font-weight: 500; letter-spacing: -.2px; }
-.quote-table-author { color: #727d69; }
-.quote-actions-note { margin: 0; padding: 10px 24px; border-top: 1px solid #eceee5; color: #77816d; font-size: 11px; }
+.quote-table-number { color: var(--qc-color-text-placeholder); font-variant-numeric: tabular-nums; }
+.quote-table-content { overflow-wrap: anywhere; font-size: var(--qc-font-size-14); font-weight: 500; letter-spacing: -.2px; }
+.quote-table-author { color: var(--qc-color-text-secondary); }
+.quote-actions-note { margin: 0; padding: 10px 24px; border-top: 1px solid var(--qc-color-border-subtle); color: var(--qc-color-text-muted); font-size: var(--qc-font-size-11); }
 .quote-delete-preview {
-    margin: 0; padding: 20px; border-radius: 8px; background: #f3f4ec; overflow-wrap: anywhere;
-    p { margin: 0; font-size: 14px; line-height: 1.8; }
-    footer { margin-top: 12px; color: #727d69; font-size: 12px; }
+    margin: 0; padding: 20px; border-radius: var(--qc-radius-8); background: var(--qc-color-surface-table-header); overflow-wrap: anywhere;
+    p { margin: 0; font-size: var(--qc-font-size-14); line-height: 1.8; }
+    footer { margin-top: 12px; color: var(--qc-color-text-secondary); font-size: var(--qc-font-size-12); }
 }
 
-.quote-search-error { color: #a36150; font-size: 13px; line-height: 1.7; }
+.quote-search-error { color: var(--qc-color-danger); font-size: var(--qc-font-size-13); line-height: 1.7; }

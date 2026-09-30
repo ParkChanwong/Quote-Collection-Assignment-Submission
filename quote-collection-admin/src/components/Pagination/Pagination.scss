@@ -1,9 +1,9 @@
 .pagination {
-    display: flex; flex-wrap: wrap; gap: 4px;
-    button { display: grid; place-items: center; min-width: 30px; height: 32px; padding: 0 6px; border: 1px solid transparent; border-radius: 6px; background: transparent; color: #627553; font-size: 14px; }
-    button:hover:not(:disabled) { background: #eaf0e5; }
-    button[aria-current='page'] { background: #284d40; color: #fffefa; }
-    button[aria-current='page']:hover { background: #284d40; }
+    display: flex; flex-wrap: wrap; gap: var(--qc-space-4);
+    button { display: grid; place-items: center; min-width: 30px; height: 32px; padding: 0 6px; border: 1px solid transparent; border-radius: var(--qc-radius-6); background: transparent; color: var(--qc-color-text-accent); font-size: var(--qc-font-size-14); }
+    button:hover:not(:disabled) { background: var(--qc-color-surface-hover); }
+    button[aria-current='page'] { background: var(--qc-color-brand-primary); color: var(--qc-color-surface-page); }
+    button[aria-current='page']:hover { background: var(--qc-color-brand-primary); }
     button:disabled { opacity: .35; cursor: default; }
 }
 

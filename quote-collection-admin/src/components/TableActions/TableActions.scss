@@ -1,9 +1,9 @@
 .table-search .table-action {
     height: 34px; min-width: 56px; padding: 6px 10px;
-    border: 1px solid #dce3d5; border-radius: 6px;
-    background: #fffefa; color: #243f37; font: inherit; font-size: 13px; white-space: nowrap;
-    &:hover:not(:disabled) { background: #eaf0e5; }
+    border: 1px solid var(--qc-color-border-control); border-radius: var(--qc-radius-6);
+    background: var(--qc-color-surface-page); color: var(--qc-color-text-primary); font: inherit; font-size: var(--qc-font-size-13); white-space: nowrap;
+    &:hover:not(:disabled) { background: var(--qc-color-surface-hover); }
     &:disabled { opacity: .5; cursor: not-allowed; }
     &.table-action-search { background: #eef2e8; &:hover:not(:disabled) { background: #e2e9da; } }
-    &.table-action-create { flex-shrink: 0; min-width: 64px; background: #284d40; border-color: #284d40; color: #fffefa; font-weight: 600; &:hover:not(:disabled) { background: #1c3e32; } }
+    &.table-action-create { flex-shrink: 0; min-width: 64px; background: var(--qc-color-brand-primary); border-color: var(--qc-color-brand-primary); color: var(--qc-color-surface-page); font-weight: 600; &:hover:not(:disabled) { background: var(--qc-color-brand-hover); } }
 }

@@ -1,7 +1,7 @@
 .table-row-actions {
-    display: flex; justify-content: center; gap: 6px;
-    button { padding: 4px 10px; border: 1px solid #dce3d5; border-radius: 5px; background: #f1f4eb; color: #496341; font-size: 12px; line-height: 1.6; white-space: nowrap; }
-    .table-delete-button { border-color: #ebdbd4; background: #fcf4ef; color: #a36150; }
+    display: flex; justify-content: center; gap: var(--qc-space-6);
+    button { padding: 4px 10px; border: 1px solid var(--qc-color-border-control); border-radius: var(--qc-radius-5); background: var(--qc-color-surface-subtle); color: var(--qc-color-text-success); font-size: var(--qc-font-size-12); line-height: 1.6; white-space: nowrap; }
+    .table-delete-button { border-color: var(--qc-color-border-danger); background: var(--qc-color-surface-danger); color: var(--qc-color-danger); }
     button:disabled { opacity: .6; cursor: not-allowed; }
 }
 

@@ -4,10 +4,10 @@
     margin: auto;
     padding: 28px;
     overflow-y: auto;
-    border: 1px solid #e1e4d9;
-    border-radius: 16px;
-    background: #fffefa;
-    color: #243f37;
+    border: 1px solid var(--qc-color-border-default);
+    border-radius: var(--qc-radius-16);
+    background: var(--qc-color-surface-page);
+    color: var(--qc-color-text-primary);
     box-shadow: 0 24px 80px #172b3526;
     font-family: inherit;
 

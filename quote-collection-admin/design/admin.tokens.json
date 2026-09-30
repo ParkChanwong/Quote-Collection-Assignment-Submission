@@ -1,0 +1,482 @@
+{
+  "$meta": {
+    "name": "Quote Collection Admin design tokens",
+    "source": "기존 어드민의 실제 스타일 값",
+    "structureReference": "강의 예제 design/montage.tokens.json의 atomic/semantic 및 속성별 분류를 참고",
+    "notes": {
+      "theme": "현재 구현된 light 테마만 정의한다. dark 값은 추정하지 않는다.",
+      "cssVar": "cssVar가 있는 항목만 CSS로 생성한다. 기존 변수명을 유지한다.",
+      "ref": "ref는 이 파일 안의 점으로 구분한 경로다. 참조 값을 단일 원본으로 사용한다.",
+      "scope": "기존 63개 공통 토큰을 분류했다. 로그인 장식, 그림자, 반응형 분기 등 나머지 값은 기존 SCSS에 있다. Montage의 미사용 값은 복사하지 않는다."
+    }
+  },
+  "color": {
+    "atomic": {
+      "color01": {
+        "value": "#243f37",
+        "usage": "제목과 본문 기본 글자의 원색"
+      },
+      "color02": {
+        "value": "#fffefa",
+        "usage": "페이지·패널 기본 크림색 배경 및 진한 버튼 위 글자의 원색"
+      },
+      "color03": {
+        "value": "#284d40",
+        "usage": "주요 버튼·선택 상태·브랜드의 원색"
+      },
+      "color04": {
+        "value": "#1c3e32",
+        "usage": "주요 버튼 hover의 원색"
+      },
+      "color05": {
+        "value": "#eeeee4",
+        "usage": "사이드바·로그인 소개 영역의 원색"
+      },
+      "color06": {
+        "value": "#e1e4d9",
+        "usage": "패널·표 기본 경계선의 원색"
+      },
+      "color07": {
+        "value": "#77816d",
+        "usage": "작은 안내·설명의 원색"
+      },
+      "color08": {
+        "value": "#727d69",
+        "usage": "보조 글자의 원색"
+      },
+      "color09": {
+        "value": "#dce3d5",
+        "usage": "버튼·입력 경계선의 원색"
+      },
+      "color10": {
+        "value": "#eaf0e5",
+        "usage": "표 작업·페이지 버튼 hover의 원색"
+      },
+      "color11": {
+        "value": "#f1f4eb",
+        "usage": "태그·보조 버튼 배경의 원색"
+      },
+      "color12": {
+        "value": "#627553",
+        "usage": "태그·보조 액션 글자의 원색"
+      },
+      "color13": {
+        "value": "#496341",
+        "usage": "목록 건수·행 작업 글자의 원색"
+      },
+      "color14": {
+        "value": "#a36150",
+        "usage": "삭제·오류 강조의 원색"
+      },
+      "color15": {
+        "value": "#f3f4ec",
+        "usage": "표 헤더·삭제 미리보기의 원색"
+      },
+      "color16": {
+        "value": "#eceee5",
+        "usage": "표 행 구분선의 원색"
+      },
+      "color17": {
+        "value": "#8a9382",
+        "usage": "검색 안내·목록 번호의 원색"
+      },
+      "color18": {
+        "value": "#fff",
+        "usage": "모달 입력 배경의 원색"
+      },
+      "color19": {
+        "value": "#dedfd5",
+        "usage": "로그인 입력 경계선의 원색"
+      },
+      "color20": {
+        "value": "#fffefb",
+        "usage": "로그인 입력 배경의 원색"
+      },
+      "color21": {
+        "value": "#63836b",
+        "usage": "로그인 입력 포커스의 원색"
+      },
+      "color22": {
+        "value": "#fcf4ef",
+        "usage": "삭제 버튼 배경의 원색"
+      },
+      "color23": {
+        "value": "#ebdbd4",
+        "usage": "삭제 버튼 경계선의 원색"
+      }
+    },
+    "semantic": {
+      "text-primary": {
+        "usage": "제목과 본문 기본 글자",
+        "light": {
+          "ref": "color.atomic.color01",
+          "cssVar": "--qc-color-text-primary"
+        }
+      },
+      "surface-page": {
+        "usage": "페이지·패널 기본 크림색 배경 및 진한 버튼 위 글자",
+        "light": {
+          "ref": "color.atomic.color02",
+          "cssVar": "--qc-color-surface-page"
+        }
+      },
+      "brand-primary": {
+        "usage": "주요 버튼·선택 상태·브랜드",
+        "light": {
+          "ref": "color.atomic.color03",
+          "cssVar": "--qc-color-brand-primary"
+        }
+      },
+      "brand-hover": {
+        "usage": "주요 버튼 hover",
+        "light": {
+          "ref": "color.atomic.color04",
+          "cssVar": "--qc-color-brand-hover"
+        }
+      },
+      "surface-sidebar": {
+        "usage": "사이드바·로그인 소개 영역",
+        "light": {
+          "ref": "color.atomic.color05",
+          "cssVar": "--qc-color-surface-sidebar"
+        }
+      },
+      "border-default": {
+        "usage": "패널·표 기본 경계선",
+        "light": {
+          "ref": "color.atomic.color06",
+          "cssVar": "--qc-color-border-default"
+        }
+      },
+      "text-muted": {
+        "usage": "작은 안내·설명",
+        "light": {
+          "ref": "color.atomic.color07",
+          "cssVar": "--qc-color-text-muted"
+        }
+      },
+      "text-secondary": {
+        "usage": "보조 글자",
+        "light": {
+          "ref": "color.atomic.color08",
+          "cssVar": "--qc-color-text-secondary"
+        }
+      },
+      "border-control": {
+        "usage": "버튼·입력 경계선",
+        "light": {
+          "ref": "color.atomic.color09",
+          "cssVar": "--qc-color-border-control"
+        }
+      },
+      "surface-hover": {
+        "usage": "표 작업·페이지 버튼 hover",
+        "light": {
+          "ref": "color.atomic.color10",
+          "cssVar": "--qc-color-surface-hover"
+        }
+      },
+      "surface-subtle": {
+        "usage": "태그·보조 버튼 배경",
+        "light": {
+          "ref": "color.atomic.color11",
+          "cssVar": "--qc-color-surface-subtle"
+        }
+      },
+      "text-accent": {
+        "usage": "태그·보조 액션 글자",
+        "light": {
+          "ref": "color.atomic.color12",
+          "cssVar": "--qc-color-text-accent"
+        }
+      },
+      "text-success": {
+        "usage": "목록 건수·행 작업 글자",
+        "light": {
+          "ref": "color.atomic.color13",
+          "cssVar": "--qc-color-text-success"
+        }
+      },
+      "danger": {
+        "usage": "삭제·오류 강조",
+        "light": {
+          "ref": "color.atomic.color14",
+          "cssVar": "--qc-color-danger"
+        }
+      },
+      "surface-table-header": {
+        "usage": "표 헤더·삭제 미리보기",
+        "light": {
+          "ref": "color.atomic.color15",
+          "cssVar": "--qc-color-surface-table-header"
+        }
+      },
+      "border-subtle": {
+        "usage": "표 행 구분선",
+        "light": {
+          "ref": "color.atomic.color16",
+          "cssVar": "--qc-color-border-subtle"
+        }
+      },
+      "text-placeholder": {
+        "usage": "검색 안내·목록 번호",
+        "light": {
+          "ref": "color.atomic.color17",
+          "cssVar": "--qc-color-text-placeholder"
+        }
+      },
+      "surface-input": {
+        "usage": "모달 입력 배경",
+        "light": {
+          "ref": "color.atomic.color18",
+          "cssVar": "--qc-color-surface-input"
+        }
+      },
+      "border-login-input": {
+        "usage": "로그인 입력 경계선",
+        "light": {
+          "ref": "color.atomic.color19",
+          "cssVar": "--qc-color-border-login-input"
+        }
+      },
+      "surface-login-input": {
+        "usage": "로그인 입력 배경",
+        "light": {
+          "ref": "color.atomic.color20",
+          "cssVar": "--qc-color-surface-login-input"
+        }
+      },
+      "border-focus": {
+        "usage": "로그인 입력 포커스",
+        "light": {
+          "ref": "color.atomic.color21",
+          "cssVar": "--qc-color-border-focus"
+        }
+      },
+      "surface-danger": {
+        "usage": "삭제 버튼 배경",
+        "light": {
+          "ref": "color.atomic.color22",
+          "cssVar": "--qc-color-surface-danger"
+        }
+      },
+      "border-danger": {
+        "usage": "삭제 버튼 경계선",
+        "light": {
+          "ref": "color.atomic.color23",
+          "cssVar": "--qc-color-border-danger"
+        }
+      }
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "ui": {
+        "value": "'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif",
+        "cssVar": "--qc-font-family-ui",
+        "usage": "기본 UI 글꼴"
+      }
+    },
+    "fontSize": {
+      "17": {
+        "value": "17px",
+        "cssVar": "--qc-font-size-17",
+        "usage": "기존 17px 글자 크기"
+      },
+      "8": {
+        "value": "8px",
+        "cssVar": "--qc-font-size-8",
+        "usage": "기존 8px 글자 크기"
+      },
+      "10": {
+        "value": "10px",
+        "cssVar": "--qc-font-size-10",
+        "usage": "기존 10px 글자 크기"
+      },
+      "14": {
+        "value": "14px",
+        "cssVar": "--qc-font-size-14",
+        "usage": "기존 14px 글자 크기"
+      },
+      "11": {
+        "value": "11px",
+        "cssVar": "--qc-font-size-11",
+        "usage": "기존 11px 글자 크기"
+      },
+      "30": {
+        "value": "30px",
+        "cssVar": "--qc-font-size-30",
+        "usage": "기존 30px 글자 크기"
+      },
+      "13": {
+        "value": "13px",
+        "cssVar": "--qc-font-size-13",
+        "usage": "기존 13px 글자 크기"
+      },
+      "26": {
+        "value": "26px",
+        "cssVar": "--qc-font-size-26",
+        "usage": "기존 26px 글자 크기"
+      },
+      "9": {
+        "value": "9px",
+        "cssVar": "--qc-font-size-9",
+        "usage": "기존 9px 글자 크기"
+      },
+      "16": {
+        "value": "16px",
+        "cssVar": "--qc-font-size-16",
+        "usage": "기존 16px 글자 크기"
+      },
+      "22": {
+        "value": "22px",
+        "cssVar": "--qc-font-size-22",
+        "usage": "기존 22px 글자 크기"
+      },
+      "12": {
+        "value": "12px",
+        "cssVar": "--qc-font-size-12",
+        "usage": "기존 12px 글자 크기"
+      },
+      "18": {
+        "value": "18px",
+        "cssVar": "--qc-font-size-18",
+        "usage": "기존 18px 글자 크기"
+      },
+      "7": {
+        "value": "7px",
+        "cssVar": "--qc-font-size-7",
+        "usage": "기존 7px 글자 크기"
+      },
+      "20": {
+        "value": "20px",
+        "cssVar": "--qc-font-size-20",
+        "usage": "기존 20px 글자 크기"
+      },
+      "19": {
+        "value": "19px",
+        "cssVar": "--qc-font-size-19",
+        "usage": "기존 19px 글자 크기"
+      },
+      "29": {
+        "value": "29px",
+        "cssVar": "--qc-font-size-29",
+        "usage": "기존 29px 글자 크기"
+      },
+      "15": {
+        "value": "15px",
+        "cssVar": "--qc-font-size-15",
+        "usage": "기존 15px 글자 크기"
+      },
+      "50": {
+        "value": "50px",
+        "cssVar": "--qc-font-size-50",
+        "usage": "기존 50px 글자 크기"
+      },
+      "21": {
+        "value": "21px",
+        "cssVar": "--qc-font-size-21",
+        "usage": "기존 21px 글자 크기"
+      },
+      "23": {
+        "value": "23px",
+        "cssVar": "--qc-font-size-23",
+        "usage": "기존 23px 글자 크기"
+      }
+    }
+  },
+  "spacing": {
+    "11": {
+      "value": "11px",
+      "cssVar": "--qc-space-11",
+      "usage": "요소 간격"
+    },
+    "12": {
+      "value": "12px",
+      "cssVar": "--qc-space-12",
+      "usage": "요소 간격"
+    },
+    "8": {
+      "value": "8px",
+      "cssVar": "--qc-space-8",
+      "usage": "요소 간격"
+    },
+    "20": {
+      "value": "20px",
+      "cssVar": "--qc-space-20",
+      "usage": "요소 간격"
+    },
+    "14": {
+      "value": "14px",
+      "cssVar": "--qc-space-14",
+      "usage": "요소 간격"
+    },
+    "6": {
+      "value": "6px",
+      "cssVar": "--qc-space-6",
+      "usage": "요소 간격"
+    },
+    "4": {
+      "value": "4px",
+      "cssVar": "--qc-space-4",
+      "usage": "요소 간격"
+    },
+    "10": {
+      "value": "10px",
+      "cssVar": "--qc-space-10",
+      "usage": "요소 간격"
+    },
+    "3": {
+      "value": "3px",
+      "cssVar": "--qc-space-3",
+      "usage": "요소 간격"
+    },
+    "7": {
+      "value": "7px",
+      "cssVar": "--qc-space-7",
+      "usage": "요소 간격"
+    },
+    "16": {
+      "value": "16px",
+      "cssVar": "--qc-space-16",
+      "usage": "요소 간격"
+    }
+  },
+  "radius": {
+    "8": {
+      "value": "8px",
+      "cssVar": "--qc-radius-8",
+      "usage": "모서리 둥글기"
+    },
+    "12": {
+      "value": "12px",
+      "cssVar": "--qc-radius-12",
+      "usage": "모서리 둥글기"
+    },
+    "6": {
+      "value": "6px",
+      "cssVar": "--qc-radius-6",
+      "usage": "모서리 둥글기"
+    },
+    "7": {
+      "value": "7px",
+      "cssVar": "--qc-radius-7",
+      "usage": "모서리 둥글기"
+    },
+    "4": {
+      "value": "4px",
+      "cssVar": "--qc-radius-4",
+      "usage": "모서리 둥글기"
+    },
+    "16": {
+      "value": "16px",
+      "cssVar": "--qc-radius-16",
+      "usage": "모서리 둥글기"
+    },
+    "5": {
+      "value": "5px",
+      "cssVar": "--qc-radius-5",
+      "usage": "모서리 둥글기"
+    }
+  }
+}
